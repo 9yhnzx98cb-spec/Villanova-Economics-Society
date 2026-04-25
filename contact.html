@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Villanova Economics Society</title>
+  <meta name="description" content="Get in touch with the Villanova Economics Society or sign up for membership." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a href="index.html" class="nav-brand">Villanova <span>Economics Society</span></a>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="board.html">Board</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="page-hero-inner">
+        <span class="eyebrow" style="color: var(--accent-gold);">Get in Touch</span>
+        <h1>Contact us</h1>
+        <p>Want to join, ask a question, or propose a collaboration? Send us a message and we'll get back to you.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="contact-wrap">
+
+        <!--
+          IMPORTANT: To make this form work, you need a free Formspree account.
+          1. Go to https://formspree.io and sign up (free tier allows 50 submissions/month).
+          2. Create a new form, then copy your form's endpoint URL.
+          3. Replace "YOUR_FORM_ID" below with the ID Formspree gives you.
+          Until you do this, the form will not actually deliver messages.
+        -->
+
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required placeholder="you@villanova.edu" />
+          </div>
+
+          <div class="form-group">
+            <label for="year">Class Year</label>
+            <select id="year" name="year">
+              <option value="">Select your year</option>
+              <option value="Freshman">Freshman</option>
+              <option value="Sophomore">Sophomore</option>
+              <option value="Junior">Junior</option>
+              <option value="Senior">Senior</option>
+              <option value="Graduate">Graduate Student</option>
+              <option value="Other">Other / Not a student</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="reason">What's this about?</label>
+            <select id="reason" name="reason">
+              <option value="Membership">I want to join the Society</option>
+              <option value="Event">Question about an event</option>
+              <option value="Research">Research opportunities</option>
+              <option value="Collaboration">Collaboration / partnership</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required placeholder="Tell us a bit about why you're reaching out..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-solid" style="width:100%;">Send Message</button>
+
+          <p class="form-note">Or email us directly at <a href="mailto:econsociety@villanova.edu">econsociety@villanova.edu</a></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <h3>Villanova Economics Society</h3>
+        <p>A student organization at Villanova University dedicated to economic discourse, undergraduate research, and professional development.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="board.html">Board</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="mailto:econsociety@villanova.edu">Email</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 Villanova Economics Society. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
